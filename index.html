@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Kavya's Personality Quiz</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- import the webpage's stylesheet -->
+	<link rel="stylesheet" href="/style.css">
+
+	<!-- import the webpage's javascript file -->
+	<script src="/script.js" defer>
+
+	</script>
+</head>
+
+<body>
+
+	<header>
+		<h1 id="starting">Hero vs. Villain Personality Quiz</h1>
+		<p>Are you the hero or the villain of a movie? This quiz will predict which role you would play through the answers you select.</p>
+	</header>
+
+	<main>
+    
+<!-- Question 1:  -->
+    
+		<h2>Which color palette do you prefer?</h2>
+		<div class="question">
+
+			<div class="answer-choice">
+				<img src="assets/light-color.jpg" alt="There are pastel colors including lavender, pink and light blue all in a swirly arrangement.">
+        <br>
+        <button onclick="disableBtnOne();" id="q1a1">Pastel colors like lavender, sky blue, cream and peach.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/dark-color.jpg" alt="There is a dark red light in the middle of a black picture. There are some red spots scattered around as well. ">
+        <br>
+        <button onclick="disableBtnOne();" id="q1a2">Dark shades of color like blood red, indigo, emerald and burnt orange.</button>
+      </div>
+
+    </div> 
+
+<!-- Question 2:  -->
+    
+    <h2>You see a hurt animal on the side of the road, but you’re not sure if it’s safe. What do you do?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/leaving.png" alt="A cartoon drawing of four signs each leading to different places. There is a picture of mountains and the sky on the signs.">
+        <br>
+        <button onclick="disableBtnTwo();" id="q2a1">Leave it there. Better to be safe than sorry.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/saving.png" alt="There is a picture of a red fox with white flowers in its hand in a pink background.">
+        <br>
+        <button onclick="disableBtnTwo();" id="q2a2">Try to save it anyway. It’s more important than the risks.</button>
+      </div>
+
+    </div> 
+
+<!-- Question 3:  -->
+    
+    <h2>Which of these houses would you prefer to live in?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/cottage.png" alt="There is a cozy house with lots of greenery around. It looks like a cottage and has a few windows and is a bit small.">
+        <br>
+        <button onclick="disableBtnThree();" id="q3a1">A cute and cozy cottage.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/mansion.jpg" alt="There is a large gray-brown house with many windows. There are a lot of trees and bushes around and the background has stormy clouds. The house looks a bit rundown.">
+        <br>
+        <button onclick="disableBtnThree();" id="q3a2">A large run-down mansion.</button>
+      </div>
+
+    </div> 
+
+  <!-- Question 4:  -->
+    
+    <h2>Which time of day do you prefer?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/day.jpg" alt="There is a window that opens to a bunch of pink magnolias and the blue sky.">
+        <br>
+        <button onclick="disableBtnFour();" id="q4a1">Day.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/night.jpg" alt="There is a window that opens to a dark night with mountains and the moon in the background.">
+        <br>
+        <button onclick="disableBtnFour();" id="q4a2">Night.</button>
+      </div>
+
+    </div> 
+
+<!-- Question 5:  -->
+    
+    <h2>Which of these would you rather have?</h2>
+    <div class="question">
+
+      <div class="answer-choice">
+        <img src="assets/money.png" alt="There is a picture of a plant with money for leaves and a hand in a suit picking the money.">
+        <br>
+        <button onclick="disableBtnFive();" id="q5a1">Money and power but no real friends.</button>
+      </div>
+
+      <div class="answer-choice">
+        <img src="assets/love.png" alt="There is a yellow cat on top of an orange cat and they are cuddling together.">
+        <br>
+        <button onclick="disableBtnFive();" id="q5a2">The dream friend group but no money or power.</button>
+      </div>
+
+    </div> 
+
+<!-- Results and reset:  -->
+    
+    <h2 id="result">You are the...</h2>
+  <button id="displayResult">Click for Results!</button> 
+<button onclick="enableBtn();" id="reset">Restart Quiz</button>
+    
+  </main>
+  </body>
+</html>
